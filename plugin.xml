@@ -1,1 +1,39 @@
-/**just created**/
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.ionic.keyboard"
+    version="1.0.4">
+    <name>Keyboard</name>
+    <description>Ionic Keyboard Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>Ionic,keyboard</keywords>
+    <repo>https://github.com/52toys/cordova-plugin-ssdk-bridge.git</repo>
+    <issue>https://github.com/52toys/cordova-plugin-ssdk-bridge/issues</issue>
+
+  <js-module src="www/ssdk.js" name="ssdk">
+    <clobbers target="cordova-plugin-ssdk" />
+  </js-module>
+
+  <!-- android -->
+  <!--<platform name="android">-->
+    <!--<config-file target="res/xml/config.xml" parent="/*">-->
+      <!--<feature name="Keyboard">-->
+        <!--<param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />-->
+        <!--<param name="onload" value="true" />-->
+      <!--</feature>-->
+    <!--</config-file>-->
+    <!--<source-file src="src/android/IonicKeyboard.java" target-dir="src/com/ionic/keyboard" />-->
+  <!--</platform>-->
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ShareSDK">
+                <param name="ios-package" value="CDVShareSDK" onload="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVShareSDK.h" />
+        <source-file src="src/ios/CDVShareSDK.m" />
+    </platform>
+
+</plugin>
