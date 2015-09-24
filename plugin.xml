@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.ionic.keyboard"
+    id="com.52toys.ssdk"
     version="1.0.4">
-    <name>Keyboard</name>
-    <description>Ionic Keyboard Plugin</description>
+    <name>ssdk</name>
+    <description>ShareSDK</description>
     <license>Apache 2.0</license>
-    <keywords>Ionic,keyboard</keywords>
+    <keywords>Ionic,Share SDK</keywords>
     <repo>https://github.com/52toys/cordova-plugin-ssdk-bridge.git</repo>
     <issue>https://github.com/52toys/cordova-plugin-ssdk-bridge/issues</issue>
 
@@ -37,3 +37,4 @@
     </platform>
 
 </plugin>
+
