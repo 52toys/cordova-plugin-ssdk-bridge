@@ -1,7 +1,7 @@
 {
     "version": "0.1.0",
     "name": "ShareSDK",
-    "cordova_name": "ssdk",
+    "cordova_name": "ShareSDK",
     "description": "Share plugin",
     "license": "Apache 2.0",
     "repo": "",
