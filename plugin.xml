@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.52toys.ssdk"
+    id="com.dogabi.ssdk"
     version="1.0.4">
     <name>ShareSDK</name>
     <description>cordova plugin for ShareSDK</description>
@@ -18,11 +18,11 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Keyboard">
-        <param name="android-package" value="com.52toys.ssdk" />
+        <param name="android-package" value="com.dogabi.cordova" />
         <param name="onload" value="true" />
       </feature>
     </config-file>
-    <source-file src="src/android/ShareSDK.java" target-dir="src/com/52toys/cordova" />
+    <source-file src="src/android/ShareSDK.java" target-dir="src/com/dogabi/cordova" />
   </platform>
 
     <!-- ios -->
