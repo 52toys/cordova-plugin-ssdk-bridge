@@ -1,4 +1,4 @@
-package com.52toys.cordova;
+package com.52toys.cordova
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
