@@ -3,27 +3,27 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="com.52toys.ssdk"
     version="1.0.4">
-    <name>ssdk</name>
-    <description>ShareSDK</description>
+    <name>ShareSDK</name>
+    <description>cordova plugin for ShareSDK</description>
     <license>Apache 2.0</license>
     <keywords>Ionic,Share SDK</keywords>
     <repo>https://github.com/52toys/cordova-plugin-ssdk-bridge.git</repo>
     <issue>https://github.com/52toys/cordova-plugin-ssdk-bridge/issues</issue>
 
-  <js-module src="www/ssdk.js" name="ssdk">
+  <js-module src="www/ssdk.js" name="ShareSDK">
     <clobbers target="cordova-plugin-ssdk" />
   </js-module>
 
   <!-- android -->
-  <!--<platform name="android">-->
-    <!--<config-file target="res/xml/config.xml" parent="/*">-->
-      <!--<feature name="Keyboard">-->
-        <!--<param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />-->
-        <!--<param name="onload" value="true" />-->
-      <!--</feature>-->
-    <!--</config-file>-->
-    <!--<source-file src="src/android/IonicKeyboard.java" target-dir="src/com/ionic/keyboard" />-->
-  <!--</platform>-->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Keyboard">
+        <param name="android-package" value="com.52toys.ssdk" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/ShareSDK.java" target-dir="src/com/52toys/cordova" />
+  </platform>
 
     <!-- ios -->
     <platform name="ios">
